@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Governance documentation
+    url: ./docs/agent-governance.md
+    about: Read governance and workflow expectations before opening an issue.

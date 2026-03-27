@@ -1,0 +1,101 @@
+# Ai-Vibe-Coding-Baseline execution policy baseline for Codex.
+
+# Read-only Git inspection can be allowed.
+prefix_rule(
+    pattern = ["git", "status"],
+    decision = "allow",
+    justification = "Read-only repository status is safe.",
+)
+
+prefix_rule(
+    pattern = ["git", "diff"],
+    decision = "allow",
+    justification = "Read-only diff inspection is safe.",
+)
+
+prefix_rule(
+    pattern = ["git", "log"],
+    decision = "allow",
+    justification = "Read-only history inspection is safe.",
+)
+
+# Mutating Git operations require user confirmation.
+prefix_rule(
+    pattern = ["git", "push"],
+    decision = "prompt",
+    justification = "Remote mutation must be explicitly approved.",
+)
+
+prefix_rule(
+    pattern = ["git", "commit"],
+    decision = "prompt",
+    justification = "Committing should remain user-visible for audit quality.",
+)
+
+prefix_rule(
+    pattern = ["git", "merge"],
+    decision = "prompt",
+    justification = "Merges can introduce conflict risk and should be explicit.",
+)
+
+# Destructive commands are blocked by default.
+prefix_rule(
+    pattern = ["rm"],
+    decision = "forbidden",
+    justification = "Direct deletion is blocked. Use explicit review and safer alternatives.",
+)
+
+prefix_rule(
+    pattern = ["git", "push", "--force"],
+    decision = "forbidden",
+    justification = "Force-push rewrites remote history and is blocked by baseline policy.",
+)
+
+prefix_rule(
+    pattern = ["git", "push", "-f"],
+    decision = "forbidden",
+    justification = "Force-push rewrites remote history and is blocked by baseline policy.",
+)
+
+prefix_rule(
+    pattern = ["git", "reset", "--hard"],
+    decision = "forbidden",
+    justification = "History-destructive reset is blocked by baseline policy.",
+)
+
+prefix_rule(
+    pattern = ["git", "checkout", "--"],
+    decision = "forbidden",
+    justification = "Discarding tracked changes is blocked by baseline policy.",
+)
+
+prefix_rule(
+    pattern = ["git", "restore", "--source"],
+    decision = "forbidden",
+    justification = "Direct source restore can discard work and is blocked by baseline policy.",
+)
+
+prefix_rule(
+    pattern = ["git", "clean", "-fd"],
+    decision = "forbidden",
+    justification = "Untracked file deletion is blocked by baseline policy.",
+)
+
+# Network/package installation should prompt.
+prefix_rule(
+    pattern = ["npm", "install"],
+    decision = "prompt",
+    justification = "Dependency changes and network access require explicit approval.",
+)
+
+prefix_rule(
+    pattern = ["pip", "install"],
+    decision = "prompt",
+    justification = "Dependency installation requires explicit approval.",
+)
+
+prefix_rule(
+    pattern = ["curl"],
+    decision = "prompt",
+    justification = "Network fetch must be explicitly approved.",
+)

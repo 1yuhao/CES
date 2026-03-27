@@ -1,0 +1,53 @@
+name: Implementation task
+description: Track a scoped implementation task for agent execution.
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: One-sentence task goal.
+    validations:
+      required: true
+  - type: input
+    id: requirement_id
+    attributes:
+      label: Requirement ID
+      description: REQ ID this task maps to.
+      placeholder: "REQ-00X"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope
+      description: What this task includes.
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this task explicitly excludes.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: Which checks/tests prove this change is correct?
+    validations:
+      required: true
+  - type: dropdown
+    id: risk_level
+    attributes:
+      label: Risk level
+      options:
+        - L0
+        - L1
+        - L2
+        - L3
+        - L4
+    validations:
+      required: true

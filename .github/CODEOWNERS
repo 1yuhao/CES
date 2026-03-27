@@ -1,0 +1,13 @@
+# Default owners for all repository content.
+* @1yuhao
+
+# Governance and policy files require explicit owner review.
+/AGENTS.md @1yuhao
+/SKILL.md @1yuhao
+/MEMORY.md @1yuhao
+/codex/rules/ @1yuhao
+/docs/ @1yuhao
+/memory/ @1yuhao
+/scripts/ @1yuhao
+/README.md @1yuhao
+/README.zh-CN.md @1yuhao
