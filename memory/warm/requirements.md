@@ -40,6 +40,9 @@ Purpose: persistent source of truth for user requirements and requirement change
   - Keep a minimal mandatory memory write set (`2+1`) and treat extended updates as on-demand.
 - `CR-007` Added code-development hard constraints:
   - Validate low-coupling and CLI-first constraints via explicit checks in regression/health pipelines.
+- `CR-008` Converted repository identity from baseline mirror to CES:
+  - Repository naming, remote targets, and governance scripts must consistently use `CES`.
+  - Legacy mirror identifiers must not remain in active docs or automation scripts.
 
 ## Traceability Notes
 

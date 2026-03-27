@@ -29,7 +29,7 @@ This runbook defines how to enforce repository governance at the GitHub platform
 ```bash
 gh api \
   --method PUT \
-  repos/1yuhao/Ai-Vibe-Coding-Baseline/branches/main/protection \
+  repos/1yuhao/CES/branches/main/protection \
   -f required_status_checks.strict=true \
   -F required_status_checks.contexts[]='governance-checks' \
   -f enforce_admins=true \

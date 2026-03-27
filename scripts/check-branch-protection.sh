@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-repo="1yuhao/Ai-Vibe-Coding-Baseline"
+repo="1yuhao/CES"
 branch="main"
 
 echo "[branch-protection-check] checking $repo:$branch ..."

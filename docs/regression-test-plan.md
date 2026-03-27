@@ -1,6 +1,6 @@
 # Regression Test Plan
 
-This plan validates the Ai-Vibe-Coding-Baseline collaboration workspace as an engineering system, not just code snippets.
+This plan validates the CES collaboration workspace as an engineering system, not just code snippets.
 
 ## Goals
 

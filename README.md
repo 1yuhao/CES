@@ -1,6 +1,7 @@
-# Ai-Vibe-Coding-Baseline
+# CES
 
 Codex-first engineering workspace with governance, safety, memory continuity, and full Git traceability.
+This repository is the CES-owned evolution of a governance baseline mirror.
 
 [简体中文文档](./README.zh-CN.md)
 
