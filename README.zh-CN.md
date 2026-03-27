@@ -1,6 +1,7 @@
-# Ai-Vibe-Coding-Baseline
+# CES
 
 面向 Codex 协作开发的工程化工作区，强调治理、安全、记忆连续性和 Git 可追溯性。
+本仓库已从治理基座镜像切换为 CES 独立项目。
 
 [English README](./README.md)
 

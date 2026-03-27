@@ -1,6 +1,6 @@
 # Agent Governance Standard (v1)
 
-This document defines how agents should behave in Ai-Vibe-Coding-Baseline.
+This document defines how agents should behave in CES.
 
 ## Core principles
 

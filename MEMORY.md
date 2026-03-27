@@ -1,10 +1,10 @@
 # MEMORY.md
 
-Token-aware memory control plane for Ai-Vibe-Coding-Baseline.
+Token-aware memory control plane for CES.
 
 ## Current Snapshot
 
-- Project: Ai-Vibe-Coding-Baseline
+- Project: CES
 - Phase: governance baseline complete, ready for first feature slice
 - Default branch policy: use `codex/<topic>` for feature/fix work
 - Default execution posture: `workspace-write` + `on-request`

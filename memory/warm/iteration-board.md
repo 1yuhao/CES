@@ -31,6 +31,7 @@ Purpose: lightweight project-management board for Codex + human collaboration.
 
 ### Done
 
+- Repository identity migrated from baseline mirror to CES (including fresh root history).
 - Governance baseline established and hardened.
 - Layered memory architecture implemented.
 - Requirement register integrated.

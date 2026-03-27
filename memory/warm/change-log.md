@@ -1,61 +1,10 @@
 # Change Log (Commit Map)
 
-## 2026-03-27 to 2026-03-28
+## 2026-03-28
 
-- `b446818` `chore: bootstrap codex workflow docs`
-  - Scope: initial `AGENTS.md`, `SKILL.md`, `MEMORY.md`
-  - Verification: repository initialized and files present
-- `861015a` `chore: standardize control file naming`
-  - Scope: naming consistency, `MEMORY.md` casing alignment
-  - Verification: references updated and tracked rename recorded
-- `3ef81e7` `chore: init workspace structure`
-  - Scope: base folders, `.gitignore`, `README.md`
-  - Verification: structure ready for development
-- `5e1ad01` `docs: add vibe coding protocol to agents`
-  - Scope: collaboration and execution protocol refinement
-  - Verification: AGENTS rules updated and pushed
-- `5a40e2a` `chore: establish system governance baseline`
-  - Scope: rules file, governance docs, security baseline
-  - Verification: execpolicy check baseline established
-- `b6e048a` `docs: harden governance baseline after review`
-  - Scope: destructive command protections, preflight, governance script
-  - Verification: `scripts/governance-check.sh` all checks passed
-- `8e22c30` `docs: add bilingual README index`
-  - Scope: English and Chinese README linkage
-  - Verification: dual-language entry points published
-- `97e82f5` `chore: migrate to layered memory architecture`
-  - Scope: introduced `memory/hot|warm|cold`, rewrote `MEMORY.md` as control plane, and aligned governance docs
-  - Verification: structure migration completed and references aligned
-- `3a04799` `docs: add requirements register to memory protocol`
-  - Scope: introduced `memory/warm/requirements.md` and integrated requirement tracking into governance and memory protocols
-  - Verification: references and workflow hooks updated across core files
-- `4ec815c` `docs: rewrite README as living project contract`
-  - Scope: expanded English/Chinese README with full governance, memory, requirements, security, and update-policy contract
-  - Verification: bilingual docs aligned and cross-linked
-- `15104c3` `feat: add AI project-management workflow layer`
-  - Scope: issue/PR templates, governance CI, memory integrity checks, iteration board, and management guide
-  - Verification: local governance + memory checks executed and docs synchronized
-- `29e147b` `feat: enforce branch protection ownership controls`
-  - Scope: CODEOWNERS, branch protection runbook/check script, and governance doc alignment
-  - Verification: repository structure and policy links updated
-- `b0b4e8a` `chore: add project health and traceability checks`
-  - Scope: added traceability validator, aggregated health-check script, CI integration, and docs alignment
-  - Verification: traceability check passed and aggregated health check passed
-- `06f8f94` `feat: enforce PR traceability and contributor workflow`
-  - Scope: strict branch protection assertions, PR traceability workflow, contributing guide, and docs/memory updates
-  - Verification: health checks passed (network-dependent branch protection query remains best-effort)
-- `881be4f` `chore: rebalance protocol for efficient operation`
-  - Scope: introduced core-vs-extended protocol split, `2+1` memory model, health-check semantics, and handoff drill
-  - Verification: traceability and project-health checks passed
-- `e508e58` `test: add regression test plan and runner`
-  - Scope: added regression test plan and runner, integrated docs references, validated balanced-mode regression run
-  - Verification: `scripts/regression-test.sh` passed (branch protection check advisory due network reachability)
-- `6fa9f0d` `test: add measurable context budget checks`
-  - Scope: added context-budget policy and check script; integrated into health and regression checks
-  - Verification: default context est tokens=688; default+requirements=1345; default+change-log=1570 (all within thresholds)
-- `7f2318d` `docs: separate base and code context modes`
-  - Scope: separated governance context and code context via mode policy integrated into AGENTS/SKILL/MEMORY/docs
-  - Verification: traceability and context-budget checks passed with updated measurements
-- `a0a6267` `feat: enforce code development hard constraints`
-  - Scope: added hard constraints doc and code-constraints-check script; integrated checks into CI, health, and regression pipelines
-  - Verification: code-constraints and full regression checks passed in balanced mode
+- `44848a4` `chore: initial import for CES`
+  - Scope: re-initialized repository history and imported baseline workspace content as CES starting snapshot.
+  - Verification: root commit created locally and pushed to `origin/main`.
+- `pending` `chore: repository-wide CES identity alignment`
+  - Scope: replaced legacy repository-name references in docs/scripts, updated governance runbook/checker targets, and refreshed memory state for CES ownership.
+  - Verification: no remaining active hardcoded legacy repository target; policy scripts checked locally.

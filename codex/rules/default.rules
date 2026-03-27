@@ -1,4 +1,4 @@
-# Ai-Vibe-Coding-Baseline execution policy baseline for Codex.
+# CES execution policy baseline for Codex.
 
 # Read-only Git inspection can be allowed.
 prefix_rule(
